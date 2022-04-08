@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header grid con area*/
+
+.headContainer{
+    display: grid;
+    height: auto;
+    background-color: beige;
+    grid-template-columns: auto auto repeat(4,1fr) 3em;
+    grid-template-rows: 7em 5em 1em;
+    grid-template-areas:    "logo logo titulo    titulo    titulo    titulo    redes"
+                            "logo logo subtitulo subtitulo subtitulo subtitulo redes"
+                            "logo logo  nav         nav     nav     nav        redes";
+}
+
+.logo{
+    grid-area: logo;
+    height: 13em;
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav{
+    grid-area: nav;
+    font-size: 1em;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.burger{
+    display: none;
+}
+.nav ul li a:hover{
+    color: red;
+    font-weight: 900;
+}
+
+.redes a:hover{
+    color: red;
+    font-weight: 900;
+}
+
+/* Main grid*/
+
+.maincontainer{
+    margin-top: 1em;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10em, 5em, 50em;
+    grid-template-areas:    "img img img"
+                            "titulo titulo titulo"
+                            "productos productos productos";
+}
+
+.portada{
+    grid-area: img;
+    height: 30em;
+    display: flex;
+}
+.portada img{
+    width: 100%;
+    height: auto;
+
+}
+
+.titsection{ 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration-line: underline;
+    grid-area: titulo;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexcontainer{
+    grid-area: productos;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.flexcontainer div{
+    width: 18.75em;
+    margin: 1em;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+.flexcontainer div img{
+    border: solid 5px;
+    border-radius: 20px;
+    width: 15em;
+
+}
+.flexcontainer div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-weight: 900;
+}
+.boton{
+    width: 13em;
+    height: 2em;
+    border-radius: 5px;
+    border: solid; 
+    color: black;
+    background-color: rgb(119, 210, 243);
+}
+.boton:hover{
+    color: rgb(175, 100, 7);
+    background-color: orange;
+    font-weight: 900;
+}
+.boton__texto{
+    text-align: left;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* FOOTER GRID */
+
+.footercontainer{
+        margin-top: 1em;
+        display: grid;
+        height: auto;
+        background-color: beige;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:    "metodos  derechos redes"
+                                "metodos2 derechos redes";
+    }
+
+.metodos{
+    grid-area: metodos;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+.metodos2{
+    grid-area: metodos2;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+.derechos{
+    grid-area: derechos;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration-line: underline;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 3em;
+    justify-content: space-around;
+}
+/* MAIN SOBRE NOSOTROS*/
+
+
+.nosotroscontainer{
+    margin-top: 1em;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto repeat(2,1fr);
+    grid-template-areas:    "tit   tit   tit   tit   tit   tit   "
+                            "hist  hist  hist  hist  hist  foto"
+                            "foto2 hist2 hist2 hist2 hist2 hist2";
+}
+
+.titsection2{
+    grid-area: tit;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration-line: underline;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HistTexto{
+    grid-area: hist;
+    background-color: rgb(248, 233, 196);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.ImgHist{
+    grid-area: foto;
+    margin-bottom: 1em;
+}
+.ImgHist img{
+    width: 25em;
+    height: 24em;
+}
+
+.ImgHistDos{
+    grid-area: foto2;
+    margin-bottom: 1em;
+}
+.ImgHistDos img{
+    width: 25em;
+    height: 24em;
+}
+
+.HistTextoDos{
+    grid-area: hist2;
+    background-color: rgb(248, 233, 196);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+/*MAIN CONTACTOS*/
+
+#formulario{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    color: rgb(0, 0, 5);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.datos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    color: rgb(0, 0, 5);
+    text-align: center;
+}
+.contact{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+    }
+.contact img{
+    width: 1em;
+    margin-left: 37em;
+}
+h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.contact p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin-left: center;
+}
+.fieldset{
+    width: 100%;
+}
+/* MEDIA QUERIS*/
+
+@media (min-width:320px) and (max-width: 370px){
+    /*media header*/
+    .headContainer{
+        height: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .titulo{
+        font-size: 1em;
+    }
+    .subtitulo{
+        font-size: 0.5em;
+    }
+    .logo{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+        grid-row: 3/4;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-area: redes;
+        margin-right: 0%;
+    }
+    /*media main */
+    .portada{
+        height: 10em;
+    }
+    .titsection{
+    font-size: 1em;
+    }
+    .flexcontainer{
+        display: flex;
+    }
+    .flexcontainer div{
+        flex-wrap: wrap
+    }
+    .flexcontainer div img{
+        width: 12em;
+    }
+    /* media footer */
+    .footercontainer{
+        margin-top: 1em;
+        display: grid;
+        height: auto;
+        background-color: beige;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:    "metodos  metodos2 redes"
+                                "derechos derechos derechos";
+    }
+    .footercontainer .redes{
+        grid-area: redes;
+    }
+}
+
+
+@media (min-width:370.1px) and (max-width: 620px)  {
+        /*media header*/
+        .headContainer{
+            height: auto;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto;
+        }
+        .titulo{
+            font-size: 1.5em;
+        }
+        .subtitulo{
+            font-size: 1em;
+        }
+        .logo{
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+        .burger{
+            display: block;
+            grid-row: 3/4;
+        }
+        .redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            grid-area: redes;
+            margin-right: 0%;
+        }
+        /*media main */
+        .portada{
+            height: 13em;
+        }
+        .titsection{
+            font-size: 1em;
+        }
+        .flexcontainer{
+            display: flex;
+        }
+        .flexcontainer div{
+            flex-wrap: wrap
+        }
+        .flexcontainer div img{
+            width: 12em;
+        }
+        /* media footer */
+        .footercontainer{
+            margin-top: 1em;
+            display: grid;
+            height: auto;
+            background-color: beige;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas:    "metodos  metodos2 redes"
+                                    "derechos derechos derechos";
+        }
+}
+@media (min-width:620.1px) and (max-width: 1030px)  {
+        /*media header*/
+        .headContainer{
+        display: grid;
+        height: auto;
+        background-color: beige;
+        grid-template-columns: auto auto repeat(4,1fr) 3em;
+        grid-template-rows: 7em 5em 1em;
+        grid-template-areas:    "logo logo titulo    titulo    titulo    titulo    redes"
+                                "logo logo subtitulo subtitulo subtitulo subtitulo redes"
+                                "nav   nav   nav         nav     nav     nav        redes";
+        }
+        .logo{
+            height: 10em;
+        }
+        .titulo{
+            font-size: 1.5em;
+            justify-content: center;
+            align-items: center;
+        }
+        .subtitulo{
+            font-size: 1em;
+        }
+        .redes{
+            margin: 0%;
+            align-items: center;
+        }
+        /*media main*/
+        .portada{
+            height: 20em;
+        }
+        /*media footer*/ 
+        .footercontainer{
+            margin-top: 1em;
+            display: grid;
+            height: auto;
+            background-color: beige;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas:    "metodos  derechos derechos redes"
+                                    "metodos2 derechos derechos redes";
+        }
+}

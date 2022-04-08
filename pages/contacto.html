@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo/popeye-transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/grids.css">
+    <script src="https://kit.fontawesome.com/f0d8422332.js" crossorigin="anonymous"></script>
+    <title>EL CAPITAN</title>
+</head>
+<body>
+    <header class="headContainer">
+        <img class="logo" src="../assets/logo/popeye-transparent.png" alt="logo">
+        <div class="titulo">
+            <h1>EL CAPITAN</h1>
+        </div>
+        <div class="subtitulo">
+            <h2>Articulos de Autor</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav  class="burger">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="redes">
+            <a href="https://www.instagram.com/?hl=es-la" target="_blanck"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/" target="_blanck"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blanck"><i class="fa-brands fa-pinterest-square"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="titsection">
+            <h3>Contactanos</h3>
+        </div>
+        <div class="contact">
+            <img src="../assets/logo/whatsapp.svg" alt="Whatsapp">
+        </div>
+        <div class="contact">
+            <p>Whatsapp: <a href="https://wa.me/5491131780003">+54-9-113178-0003</a>
+            </p>
+        </div>
+        <br>
+        <div class="contact">
+            <img src="../assets/logo/mail.svg" alt="Mail">
+        </div>
+        <div class="contact">
+            <p> E-mail: <a href="mailto:fedetorres88@gmail.com">fedetorres88@gmail.com</a></h4>
+            </p>
+        </div>
+        <h5>Ponete en contacto con nosotros</h5>
+        <section id="formulario">
+            <fieldset class="fieldset">
+                <legend>Formulario de contacto</legend>
+                <form action="procesar.php" method="post">
+                <p> 
+                <label for="nombre">Nombre:</label>
+                <input type="text"name="nombre" placeholder="ingresa tu nombre"required>
+                </p>
+                <p>
+                <label for="Apellido">Apellido:</label>
+                <input type="text"name="Apellido" placeholder="ingresa tu apellido"required>
+                </p>
+                <p>
+                <label for="e-mail">e-mail:</label>
+                <input type="email"name="e-mail" placeholder="ingresa tu e-mail" required>
+                </p>
+                <h4>Dejanos tu consulta</h4>
+                <p>
+                <textarea class="fieldset" name="Dejanos tu mensaje" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                <input type="submit" value="enviar" >
+                </p>
+                </form> 
+            </fieldset>
+        </section>
+    </main>    
+    <footer class="footercontainer">
+        <div class="metodos">
+            <p>Métodos de pago:</p>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-bitcoin"></i>
+        </div>
+        <div class="metodos2">
+            <p>Métodos de envio:</p>
+            <i class="fa-solid fa-truck-fast"></i>
+            <i class="fa-solid fa-motorcycle"></i>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="derechos"> 
+            <h6>Todos los derechos registrados 2022©</h6> 
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/?hl=es-la" target="_blanck"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/" target="_blanck"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blanck"><i class="fa-brands fa-pinterest-square"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
