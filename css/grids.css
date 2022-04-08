@@ -23,6 +23,7 @@
     height: 13em;
 }
 
+
 .titulo{
     grid-area: titulo;
     font-size: 2.5em;
@@ -38,12 +39,12 @@
 }
 
 
-.nav{
+.nav1{
     grid-area: nav;
     font-size: 1em;
 }
 
-.nav ul{
+.nav1 ul{
     display: flex;
     justify-content: space-around;
 }
@@ -56,10 +57,12 @@
     justify-content: space-around;
 }
 
+
+
 .burger{
     display: none;
 }
-.nav ul li a:hover{
+.nav1 ul li a:hover{
     color: red;
     font-weight: 900;
 }
@@ -67,7 +70,24 @@
 .redes a:hover{
     color: red;
     font-weight: 900;
+    /* animacion*/
+    -webkit-animation: bump .25s ease-in-out;
+    -moz-animation: bump .25s ease-in-out;
+    animation: bump .25s ease-in-out;
+    cursor:pointer;
 }
+@keyframes bump {
+    33% {
+      transform: scale(3.3);
+    }
+    66% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }
+
 
 /* Main grid*/
 
@@ -143,7 +163,11 @@
     color: rgb(175, 100, 7);
     background-color: orange;
     font-weight: 900;
+    cursor: pointer;
 }
+
+
+
 .boton__texto{
     text-align: left;
     font-size: medium;
