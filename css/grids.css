@@ -97,8 +97,8 @@
     height: auto;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 10em, 5em, 50em;
-    grid-template-areas:    "img img img"
-                            "titulo titulo titulo"
+    grid-template-areas:    "img        img       img"
+                            "titulo    titulo    titulo"
                             "productos productos productos";
 }
 
