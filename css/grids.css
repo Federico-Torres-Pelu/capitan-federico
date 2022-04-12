@@ -111,11 +111,14 @@
     width: 100%;
     height: auto;
 }
-
+/*carusel con bootstrap*/
+.carousel-item{
+    height: 30em;
+}
 #carouselExampleControls{
     margin: 1em;
 }
-
+/*hasta aca el carusel*/
 .titsection{ 
     margin-top: 1em;
     margin-bottom: 1em;
