@@ -319,7 +319,7 @@
     margin-right: 3em;
     justify-content: space-around;
 }
-/* MAIN SOBRE NOSOTROS*/
+/* MAIN SOBRE NOSOTROS GRID*/
 
 
 .nosotroscontainer{
@@ -381,7 +381,16 @@
     padding-top: 2em;
     margin-bottom: 1em;
 }
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.1s both;
+	        animation: bounce-in-top 1.1s both;
+}
 
+/*SONBRE NOSOTROS BOOTSTRAP*/
+
+.container{
+    margin-top: 1em;
+}
 
 /*MAIN CONTACTOS*/
 
