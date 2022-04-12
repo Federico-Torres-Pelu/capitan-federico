@@ -110,7 +110,10 @@
 .portada img{
     width: 100%;
     height: auto;
+}
 
+#carouselExampleControls{
+    margin: 1em;
 }
 
 .titsection{ 
@@ -248,7 +251,7 @@
     grid-area: hist;
     background-color: rgb(248, 233, 196);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     padding: 1em;
     margin-bottom: 1em;
