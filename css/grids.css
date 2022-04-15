@@ -26,7 +26,7 @@
 
 .titulo{
     grid-area: titulo;
-    font-size: 2.5em;
+    font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,11 +101,10 @@
     justify-content: space-around;
 }
 
-
-
 .burger{
     display: none;
 }
+
 .nav1 ul li a:hover{
     color: red;
     font-weight: 900;
@@ -155,14 +154,17 @@
     width: 100%;
     height: auto;
 }
-/*carusel con bootstrap*/
-.carousel-item{
-    height: 30em;
+.ajustar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#carouselExampleControls{
-    margin: 1em;
+
+.ajustar2{
+    max-width: 100%;
+    max-height: 50%;
 }
-/*hasta aca el carusel*/
+
 .titsection{ 
     margin-top: 1em;
     margin-bottom: 1em;
@@ -437,7 +439,8 @@ h5{
 }
 /* MEDIA QUERIS*/
 
-@media (min-width:320px) and (max-width: 370px){
+@media screen and (max-width: 370px){
+    /*@media (min-width:320px) and (max-width: 370px){*/
     /*media header*/
     .headContainer{
         height: auto;
