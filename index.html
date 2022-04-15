@@ -22,19 +22,21 @@
 
 <body>
     <!-- HEADER-->
-    <header class="headContainer">
-        <img class="logo flip-scale-up-hor" src="assets/logo/popeye-transparent.png" alt="logo">
+    <header class="padre">
 
-        <div class="titulo text-focus-in">
+        <div class="logo">
+        <img src="assets/logo/popeye-transparent.png" alt="logo">
+        </div>
+        <div class="titulo">
             <h1>EL CAPITAN</h1>
         </div>
 
         <div class="subtitulo">
-            <h2>Articulos de Autor</h2>
+            <h2 class="d-flex justify-content-center">Articulos de Autor</h2>
         </div>
 
-        <nav class="nav1">
-            <ul>
+        <nav class="navegacion">
+            <ul class="d-flex justify-content-around pt-3">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="pages/productos.html">Productos</a></li>
                 <li><a href="pages/sobrenosotros.html">Sobre nosotros</a></li>
@@ -43,18 +45,11 @@
             </ul>
         </nav>
 
-        <nav  class="burger">
-            <div>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-        
-        <div class="redes">
+        <div class="redes d-flex flex-column justify-content-center align-items-end">
             <a href="https://www.instagram.com/?hl=es-la" target="_blanck"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://www.facebook.com/" target="_blanck"><i class="fa-brands fa-facebook-square"></i></a>
             <a href="https://ar.pinterest.com/" target="_blanck"><i class="fa-brands fa-pinterest-square"></i></a>
         </div>
-        <br>
     </header>
 
 <!-- MAIN-->
