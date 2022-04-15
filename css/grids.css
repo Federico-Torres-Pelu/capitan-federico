@@ -147,13 +147,14 @@
 
 .portada{
     grid-area: img;
-    height: 30em;
+    /*height: 30em;*/
     display: flex;
 }
+/*
 .portada img{
     width: 100%;
     height: auto;
-}
+}*/
 .ajustar{
     display: flex;
     justify-content: center;
@@ -395,7 +396,7 @@
 }
 
 /*MAIN CONTACTOS*/
-
+/*
 #formulario{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
@@ -404,7 +405,7 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-}
+}*/
 .datos{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
@@ -434,9 +435,22 @@ h5{
     font-size: large;
     margin-left: center;
 }
+/*
 .fieldset{
     width: 100%;
+}*/
+
+.header1 {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
 }
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
 /* MEDIA QUERIS*/
 
 @media screen and (max-width: 370px){
